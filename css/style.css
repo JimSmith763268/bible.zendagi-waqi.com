@@ -1,0 +1,241 @@
+body {
+    font-family: Adobe Arabic;
+    font-size: 2.5em;
+    direction: rtl;
+}
+
+.book-container {
+	border: 73px solid transparent;
+    padding: 15px;
+    border-image-source: url(/images/border.png);
+    border-image-slice: 73;
+    border-image-repeat: repeat;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	background-color: #F7FCE3;
+}
+
+.verse-marker {
+    vertical-align: super;
+    font-size: 75%;
+}
+
+.chapter-marker {
+    float: right;
+    font-size: 200%;
+}
+
+.q1 {
+    margin-right: 2em;
+    margin-top: 0em;
+    margin-bottom: 0.2em;
+}
+
+.q2 {
+    margin-right: 4em;
+    margin-top: 0em;
+    margin-bottom: 0.2em;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.button-container > a {
+    display: block;
+    border: medium solid #5d7238;
+    border-radius: 0.5em;
+    padding: 0.25em;
+    padding-bottom: 0px;
+}
+
+.button-container > a > svg {
+    fill: #5d7238;
+    width: 1.5em;
+    height: 1.5em;
+}
+
+#dark-screen {
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-color: black;
+    opacity: 30%;
+}
+
+#feedback-container {
+    display: none;
+    opacity: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 20;
+}
+
+#feedback-container > div {
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 90%;
+    margin: 1em auto;
+    border: thin solid black;
+    padding: 0.75em;
+}
+
+#dark-screen, #feedback-container {
+    display: none;
+}
+
+h4 { 
+    display: none;
+}
+
+#close-button > svg {
+    color: black;
+    width: 1em;
+    padding-right: 0.25em;
+}
+
+#submit-button > svg {
+    color: black;
+    width: 2em;
+    padding: 0.5em;
+}
+
+#messageContent {
+    width: 95%;
+    height: 5em;
+    margin-left: 2%;
+    margin-right: 2%;
+    font-size: 1em;
+    font-family: serif;
+}
+
+body > p.intro {
+    font-size: 0.8em;
+    text-align: center;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#navbar {
+    background-color: #5d7238; /* Black background color */
+    position: fixed; /* Make it stick/fixed */
+    top: 0; /* Stay on top */
+    width: 100%; /* Full width */
+    transition: top 0.3s; /* Transition effect when sliding down (and up) */
+    color: white;
+    direction: rtl;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Adobe Arabic;
+    font-size: 1.5em;
+  }
+
+  #navbar-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  #navbar-container > div {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  #navbar-container > * {
+    align-self: center;
+  }
+
+  /* Style the navbar links */
+  #navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  #navbar a > svg {
+      fill: white;
+      width: 0.75em;
+      height: 0.75em;
+      padding-top: 0.5em;
+  }
+
+  select {
+    font-size: 1em;
+  }
+
+.sep {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+ul.nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 0px;
+}
+
+ul.nav > li {
+    display: block;
+    background-color: #5d7238;
+    margin: 0.2em;
+    padding: 0.1em;
+    border-radius: 0.5em;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+ul.nav > li > a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    width: 100%;
+}
+
+.psalm-description {
+    font-style: italic;
+    text-align: center;
+}
+
+p.indented {
+    margin-left: 1em;
+}
+
+
+p.verse1 {
+    margin-left: 1em;
+}
+
+p.verse2 {
+    margin-left: 2em;
+}
+
+p.verse3 {
+    margin-left: 3em;
+}
+
+p.section-range {
+    text-align: center;
+}
